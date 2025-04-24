@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定　UTF-8を指定します -->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでもきれいに表示する【レスポンシブ表示】のための記述です -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定します -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述です -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトルを記述します -->
+    <title>SAORSA</title>
+    <!-- google fontsを読み込むための記述します -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Oooh+Baby&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- サイトの概要を記述します -->
+    <meta
+      name="description"
+      content="なりたい私を叶えるリュックSAORSAの商品ページ"
+    />
+
+    <!-- OGPの内容を記述します -->
+    <meta property="og:title" content="SAORSA" />
+    <meta
+      property="og:description"
+      content="なりたい私を叶えるリュックSAORSAの商品ページ"
+    />
+    <!-- SNSでシェアされたときに表示される画像（サムネイル） -->
+    <meta property="og:image" content="" />
+    <!-- そのページの正規のURL（canonical URL） -->
+    <meta property="og:url" content="" />
+
+    <!-- スタイルシートの読み込みのための記述です -->
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- wow -->
+    <link rel="stylesheet" href="./wow/animate.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="p-header p-header__inner">
+      <a href="#" class="p-header__logo">
+        <img
+          src="./img/icon/logo.webp"
+          alt="SAORSAロゴ"
+          loading="lazy"
+          width="404"
+          height="68"
+        />
+      </a>
+      <nav class="p-header__nav" aria-label="メインナビゲーション">
+        <ul class="p-header__nav-list">
+          <li class="p-header__nav-item">
+            <a href="#point" class="p-header__nav-link">
+              <p class="p-header__nav-item-En">POINT</p>
+              <p class="p-header__nav-item-ja">特徴</p>
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#color" class="p-header__nav-link">
+              <p class="p-header__nav-item-En">COLOR</p>
+              <p class="p-header__nav-item-ja">カラー</p>
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#voice" class="p-header__nav-link">
+              <p class="p-header__nav-item-En">VOICE</p>
+              <p class="p-header__nav-item-ja">口コミ</p>
+            </a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="#detail" class="p-header__nav-link">
+              <p class="p-header__nav-item-En">DETAIL</p>
+              <p class="p-header__nav-item-ja">商品詳細</p>
+            </a>
+          </li>
+        </ul>
+        <div class="p-header__nav-btn">
+          <a href="#" class="c-button c-button--header">
+            <p class="c-button__text">CONTACT</p>
+            <div class="c-button__arrow">
+              <img
+                src="./img/icon/arrow.webp"
+                alt="button矢印"
+                loading="lazy"
+                width="11"
+                height="18"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="p-header__nav-btn2">
+          <a href="#" class="c-button c-button--small p-header__nav-button">
+            <p class="c-button__text">CONTACT</p>
+            <div class="c-button__arrow">
+              <img
+                src="./img/icon/arrow.webp"
+                alt="ボタン矢印"
+                loading="lazy"
+                width="11"
+                height="18"
+              />
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <button class="p-drawer" id="js-drawer-icon" aria-label="メニューを開く">
+        <span class="p-drawer__bar"></span>
+        <span class="p-drawer__bar"></span>
+        <span class="p-drawer__bar"></span>
+      </button>
+    </header>
+
+    <div class="p-drawer__contents" id="js-drawer-contents">
+      <nav
+        class="p-drawer__nav"
+        id="js-drawer__nav"
+        aria-label="グローバルナビゲーション"
+      >
+        <ul class="p-drawer__nav-list">
+          <li class="p-drawer__nav-item">
+            <a href="#point" class="p-drawer__nav-link">
+              <p class="p-drawer__nav-item-En">POINT</p>
+              <p class="p-drawer__nav-item-ja">特徴</p>
+            </a>
+          </li>
+          <li class="p-drawer__nav-item">
+            <a href="#color" class="p-drawer__nav-link">
+              <p class="p-drawer__nav-item-En">COLOR</p>
+              <p class="p-drawer__nav-item-ja">カラー</p>
+            </a>
+          </li>
+          <li class="p-drawer__nav-item">
+            <a href="#voice" class="p-drawer__nav-link">
+              <p class="p-drawer__nav-item-En">VOICE</p>
+              <p class="p-drawer__nav-item-ja">口コミ</p>
+            </a>
+          </li>
+          <li class="p-drawer__nav-item">
+            <a href="#detail" class="p-drawer__nav-link">
+              <p class="p-drawer__nav-item-En">DETAIL</p>
+              <p class="p-drawer__nav-item-ja">商品詳細</p>
+            </a>
+          </li>
+        </ul>
+        <div class="p-drawer__btn">
+          <a href="#" class="c-button c-button--white">
+            <p class="c-button__text">CONTACT</p>
+            <div class="c-button__arrow">
+              <img
+                src="./img/icon/arrow.webp"
+                alt="ボタン矢印"
+                loading="lazy"
+                width="11"
+                height="18"
+              />
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- /header -->
+
+    <main>
+      <div class="p-fv__bg-woman-1 wow fadeIn" data-wow-duration="1.5s">
+        <!--fvの女性画像は上aboutセクションと重なりあうためmainを基準にabsolute  -->
+        <img
+          src="./img/fv-woman.webp"
+          alt="働く女性の画像"
+          loading="lazy"
+          width="966"
+          height="1484"
+        />
+      </div>
+
+      <!-- ===============================================
+                      #fv
+===============================================  -->
+
+      <section class="p-fv__bg wow fadeIn" data-wow-duration="2s">
+        <div class="p-fv p-fv__inner">
+          <picture class="p-fv-copy">
+            <source
+              media="(min-width: 768px) "
+              srcset="./img/キャッチコピー（pc）.webp"
+            />
+            <img
+              src="./img/キャッチコピー.webp"
+              alt="なりたい私をかなえるリュック"
+              loading="lazy"
+              width="592"
+              height="159"
+            />
+          </picture>
+          <p class="p-fv__text">
+            仕事もプライベートも<br class="u-hidden-xl" />
+            自由に選べるPCリュック
+          </p>
+          <div class="p-fv__card-cotainer">
+            <div class="p-fv__card">
+              <div class="p-fv__card-logo">
+                <h2 class="p-fv__shop-name">SAORSA</h2>
+                <p class="p-fv__shop-sub">BE MISS WANDERL</p>
+                <div class="p-fv__shop-line"></div>
+              </div>
+              <div class="p-fv__cta">
+                <p class="p-fv__cta-coment">
+                  \ 今だけ <span class="p-fv__cta-coment-big">10</span>%OFF /
+                </p>
+                <div class="p-fv__cta-btn">
+                  <a
+                    href="#"
+                    class="c-button c-button--white c-button--small js-cta"
+                  >
+                    <p class="c-button__text">購入はこちら</p>
+                    <div class="c-button__arrow">
+                      <img
+                        src="./img/icon/arrow.webp"
+                        alt="ボタンの矢印"
+                        loading="lazy"
+                        width="11"
+                        height="18"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <p class="p-fv__cta-deco">Special Sell</p>
+              </div>
+              <!-- <div class="p-fv__bg-woman">
+                <img
+                  src="./img/fv-woman.webp"
+                  alt="働く女性の画像"
+                  loading="lazy"
+                  width="966"
+                  height="1484"
+                />
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                    /fv
+===============================================  -->
+
+      <!-- ===============================================
+                    #about
+===============================================  -->
+      <section class="p-about-bg" id="about">
+        <div class="p-about p-about__inner">
+          <div class="p-about__bg-img">
+            <img
+              src="./img/icon/woman.webp"
+              alt="悩んでいる女性"
+              loading="lazy"
+              width="612"
+              height="730"
+            />
+          </div>
+
+          <div class="p-about__wrap">
+            <h2 class="p-about__title wow fadeIn" data-wow-duration="2s">
+              <span class="p-about__title-bg">SAORSA</span>(シオルサ)は<br />
+              こんな<span class="p-about__title-bg">声</span>から生まれました
+            </h2>
+            <div class="p-about__contents">
+              <div class="p-about__content">
+                <p class="p-about__text">
+                  ビジネスリュックにPCは入るけどカジュアル
+                  すぎる、もう少しきちんと感がほしい
+                </p>
+              </div>
+              <div class="p-about__content">
+                <p class="p-about__text">
+                  お気に入りのリュックにはPCがきれいに入らず別持ちしている
+                </p>
+              </div>
+              <div class="p-about__content">
+                <p class="p-about__text">
+                  機能性の高いアイテムは好きだけど、高級感のない安っぽいものが多い。
+                </p>
+              </div>
+              <div class="p-about__content">
+                <p class="p-about__text">
+                  仕事とプライベートを両立できるちょうどよいリュックが見つからない。
+                </p>
+              </div>
+              <div class="p-about__content">
+                <p class="p-about__text">
+                  荷物が多くて全てリュックにはいると<br
+                    class="u-hidden-pc"
+                  />重いため肩がこる
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                    /about
+===============================================  -->
+
+<!-- tera-section -->
+ <section class="p-tera">
+  <div class="p-tera__inner">
+    <div class="p-tera__title">
+      <h2 class="p-tera__title-ja"></h2>
+    </div>
+  </div>
+ </section>
+<!-- /tera-section -->
+
+
+
+
+
+
+      <!-- /about-mr.tera 練習-->
+      <!-- <section class="p-tera">
+        <div class="p-tera__inner">
+          <div class="p-tera__title">
+            <h2 class="p-tera__title-ja">てらさん</h2>
+            <p class="p-tera__title-en">terasan</p>
+          </div>
+        </div>
+
+        <div class="p-tera__card">
+          <p class="p-tera__card-title">gulp勉強会</p>
+          <div class="tera__card-text-contents">
+            <p class="tera__card-text">gulpって便利</p>
+            <p class="tera__card-text">gulpって難しい</p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- about-mr.tera -->
+
+      <!-- ===============================================
+                    #point
+===============================================  -->
+      <section class="p-point-bg" id="point">
+        <div class="p-point-bg__arrow">
+          <img
+            src="./img/icon/section-arrow.webp"
+            alt="下向き矢印"
+            loading="lazy"
+            width="81"
+            height="38"
+          />
+        </div>
+        <div class="p-point p-point__inner">
+          <div class="c-title wow fadeIn" data-wow-duration="2s">
+            <h2 class="c-title__main">
+              コーディネートにも合わせやすく、<br />
+              機能性や使いやすさをとことん追求
+            </h2>
+            <div class="c-title__en">Point</div>
+          </div>
+          <div class="p-point__contents">
+            <div class="p-point__cards">
+              <div class="p-point__card">
+                <div class="p-point__card-img">
+                  <img
+                    src="./img/point/1.webp"
+                    alt="PCを出し入れしている画像"
+                    loading="lazy"
+                    width="801"
+                    height="739"
+                  />
+                </div>
+                <h3 class="p-point__card-title">PCの出し入れ簡単</h3>
+                <p class="p-point__card-text">
+                  14インチMacBook Pro対応<br />
+                  ウレタンクッション付き収納ポケット
+                </p>
+                <div class="p-point__card-deco">
+                  <p class="p-point__card-num">01</p>
+                  <div class="p-point__card-bar"></div>
+                </div>
+              </div>
+              <div class="p-point__card">
+                <div class="p-point__card-img">
+                  <img
+                    src="./img/point/2.webp"
+                    alt="大容量のリュック"
+                    loading="lazy"
+                    width="801"
+                    height="739"
+                  />
+                </div>
+                <h3 class="p-point__card-title">驚きの大容量</h3>
+                <p class="p-point__card-text">
+                  PC・A4対応含む計10個のポケット＋水筒ホルダー付き
+                </p>
+                <div class="p-point__card-deco">
+                  <p class="p-point__card-num">02</p>
+                  <div class="p-point__card-bar"></div>
+                </div>
+              </div>
+              <div class="p-point__card">
+                <div class="p-point__card-img">
+                  <img
+                    src="./img/point/3.webp"
+                    alt="軽量設計のリュック"
+                    loading="lazy"
+                    width="801"
+                    height="739"
+                  />
+                </div>
+                <h3 class="p-point__card-title">軽量設計</h3>
+                <p class="p-point__card-text">
+                  14インチMacBook Pro対応<br />
+                  約0.9kgの軽さで荷物が増えても快適
+                </p>
+                <div class="p-point__card-deco">
+                  <p class="p-point__card-num">03</p>
+                  <div class="p-point__card-bar"></div>
+                </div>
+              </div>
+              <div class="p-point__card">
+                <div class="p-point__card-img">
+                  <img
+                    src="./img/point/4.webp"
+                    alt="レザーを使用したリュック"
+                    loading="lazy"
+                    width="801"
+                    height="739"
+                  />
+                </div>
+                <h3 class="p-point__card-title">オシャレなデザイン</h3>
+                <p class="p-point__card-text">
+                  レザーを使用し、<br />
+                  大人っぽく高級感のあるデザイン
+                </p>
+                <div class="p-point__card-deco">
+                  <p class="p-point__card-num">04</p>
+                  <div class="p-point__card-bar"></div>
+                </div>
+              </div>
+              <div class="p-point__card">
+                <div class="p-point__card-img">
+                  <img
+                    src="./img/point/5.webp"
+                    alt="快適なショルダーベルト"
+                    loading="lazy"
+                    width="801"
+                    height="739"
+                  />
+                </div>
+                <h3 class="p-point__card-title">快適なショルダーベルト</h3>
+                <p class="p-point__card-text">
+                  厚みのある細めのベルトで肩への負担を軽減、スッキリとした見た目
+                </p>
+                <div class="p-point__card-deco">
+                  <p class="p-point__card-num">05</p>
+                  <div class="p-point__card-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                    /point
+===============================================  -->
+      <!-- ===============================================
+                    #cta
+===============================================  -->
+      <section class="p-cta__bg" id="cta">
+        <p class="p-cta__bg-text">Special Sell</p>
+        <div class="p-cta p-cta__inner">
+          <div class="p-cta__contents">
+            <div class="p-cta__text-wrap">
+              <p class="p-cta__text">
+                \ 今なら<span class="p-cta__text-bg">10</span> %OFF /
+              </p>
+              <p class="p-cta__price">
+                22,000<span class="p-cta__price-small">円(税込)</span>⇀<span
+                  class="p-cta__price-bg"
+                  >19,800</span
+                ><span class="p-cta__price-small">円(税込)</span>
+              </p>
+            </div>
+            <a href="#" class="p-cta__btn c-button c-button--white js-cta">
+              <p class="c-button__text">購入はこちら</p>
+              <div class="c-button__arrow">
+                <img
+                  src="./img/icon/arrow.webp"
+                  alt="ボタンの矢印"
+                  loading="lazy"
+                  width="11"
+                  height="18"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                    /cta
+===============================================  -->
+      <!-- ===============================================
+                    #color
+===============================================  -->
+      <section class="p-color__bg" id="color">
+        <div class="p-color p-color__inner">
+          <div class="c-title wow fadeIn" data-wow-duration="2s">
+            <h2 class="c-title__main">
+              ”仕事もおしゃれも<br />
+              どちらも諦めたくない”女性を応援
+            </h2>
+            <div class="c-title__en">Color</div>
+          </div>
+          <div class="p-color__cards">
+            <div class="p-color__card">
+              <div class="p-color__card-item">
+                <img
+                  src="./img/color/black.webp"
+                  alt="黒のリュック"
+                  loading="lazy"
+                  width="1118"
+                  height="973"
+                />
+              </div>
+              <p class="p-color__card-text">
+                深みのあるシックな佇まい<br />
+                大人の品格を宿した、タイムレスなブラック
+              </p>
+              <div class="p-color__bg-frame">
+                <img
+                  src="./img/color/left-frame.webp"
+                  alt=""
+                  loading="lazy"
+                  width="243"
+                  height="361"
+                />
+              </div>
+              <div class="p-color__bg-name">
+                <img
+                  src="./img/color/NORL BLOCK.webp"
+                  alt="NORL BLOCK"
+                  loading="lazy"
+                  width="69"
+                  height="864"
+                />
+              </div>
+              <div class="p-color__bg-color p-color__bg-color--black"></div>
+            </div>
+            <div class="p-color__card">
+              <div class="p-color__card-item">
+                <img
+                  src="./img/color/blue.webp"
+                  alt="水色のリュック"
+                  loading="lazy"
+                  width="1116"
+                  height="1005"
+                />
+              </div>
+              <p class="p-color__card-text">
+                くすみがかった青が映し出す、知的な余裕。上品でさりげなく個性を際立たせるブルー
+              </p>
+              <div class="p-color__bg-frame">
+                <img
+                  src="./img/color/right-frame.webp"
+                  alt=""
+                  loading="lazy"
+                  width="243"
+                  height="361"
+                />
+              </div>
+              <div class="p-color__bg-name-blue">
+                <img
+                  src="./img/color/SMOKY BLUE.webp"
+                  alt="SMOKY BLUE"
+                  loading="lazy"
+                  width="82"
+                  height="825"
+                />
+              </div>
+              <div class="p-color__bg-color p-color__bg-color--blue"></div>
+            </div>
+            <div class="p-color__card">
+              <div class="p-color__card-item">
+                <img
+                  src="./img/color/pink.webp"
+                  alt="ピンクのリュック"
+                  loading="lazy"
+                  width="1118"
+                  height="973"
+                />
+              </div>
+              <p class="p-color__card-text">
+                甘さをひかえたニュアンスピンク。優雅さと落ち着きを両立する、洗練のローズトーン
+              </p>
+              <div class="p-color__bg-frame">
+                <img
+                  src="./img/color/left-frame.webp"
+                  alt=""
+                  loading="lazy"
+                  width="243"
+                  height="361"
+                />
+              </div>
+              <div class="p-color__bg-name">
+                <img
+                  src="./img/color/SMOKY ROSE.webp"
+                  alt="SMOKY ROSE"
+                  loading="lazy"
+                  width="69"
+                  height="864"
+                />
+              </div>
+              <div class="p-color__bg-color p-color__bg-color--pink"></div>
+            </div>
+            <div class="p-color__card">
+              <div class="p-color__card-item">
+                <img
+                  src="./img/color/begie.webp"
+                  alt="ベージュのリュック"
+                  loading="lazy"
+                  width="1116"
+                  height="1005"
+                />
+              </div>
+              <p class="p-color__card-text">
+                柔らかくも芯のある、エクリュベージュ。ナチュラルな気品が、大人のこなれ感を叶える
+              </p>
+              <div class="p-color__bg-frame">
+                <img
+                  src="./img/color/right-frame.webp"
+                  alt=""
+                  loading="lazy"
+                  width="243"
+                  height="361"
+                />
+              </div>
+              <div class="p-color__bg-name-begie">
+                <img
+                  src="./img/color/ECRU　BEGIE.webp"
+                  alt="ECRU BEGIE"
+                  loading="lazy"
+                  width="67"
+                  height="824"
+                />
+              </div>
+              <div class="p-color__bg-color p-color__bg-color--begie"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                    /color
+===============================================  -->
+      <!-- ===============================================
+                    #voice
+===============================================  -->
+      <section class="p-voice-bg" id="voice">
+        <div class="p-voice p-voice__inner">
+          <div class="c-title wow fadeIn" data-wow-duration="2s">
+            <h2 class="c-title__main">
+              SAORSAだからこそ<br />
+              かなえられる自由な生活スタイル
+            </h2>
+            <div class="c-title__en">Voice</div>
+          </div>
+          <div class="p-voice-cards">
+            <div class="p-voice-card">
+              <div class="p-voice-card__text-contents">
+                <p class="p-voice-card__title">たくさん入るのに、肩がラク！</p>
+                <div class="p-voice-card__body">
+                  <p class="p-voice-card__text">
+                    「荷物が多くても肩がこらない！重さを分散してくれるから、長時間背負っても快適◎」
+                  </p>
+                  <p class="p-voice-card__name">26歳　Sさん</p>
+                </div>
+              </div>
+              <div class="p-voice-card__img">
+                <img
+                  src="./img/Voice/１.webp"
+                  alt="自転車に乗る女性"
+                  loading="lazy"
+                  width="1136"
+                  height="1136"
+                />
+              </div>
+              <div class="p-voice-card__bg"></div>
+            </div>
+            <div class="p-voice-card p-voice-card--reverse">
+              <div class="p-voice-card__text-contents">
+                <p class="p-voice-card__title">
+                  きちんと感×おしゃれの<br />絶妙バランス！
+                </p>
+                <div class="p-voice-card__body">
+                  <p class="p-voice-card__text">
+                    「仕事にもプライベートにも馴染むデザイン！PCリュックだけど、
+                    きちんと感も◎」
+                  </p>
+                  <p class="p-voice-card__name">36歳　Yさん</p>
+                </div>
+              </div>
+              <div class="p-voice-card__img">
+                <img
+                  src="./img/Voice/２.webp"
+                  alt="パソコンを触る女性"
+                  loading="lazy"
+                  width="1136"
+                  height="1136"
+                />
+              </div>
+              <div class="p-voice-card__bg p-voice-card__bg--blue"></div>
+            </div>
+            <div class="p-voice-card">
+              <div class="p-voice-card__text-contents">
+                <p class="p-voice-card__title">PCがスッと入ってストレスゼロ!</p>
+                <div class="p-voice-card__body">
+                  <p class="p-voice-card__text">
+                    「今までのリュックにはPCが入らなかったけど、これはスムーズに収納OK！もう別持ちしなくていい♪」
+                  </p>
+                  <p class="p-voice-card__name">30歳　Hさん</p>
+                </div>
+              </div>
+              <div class="p-voice-card__img">
+                <img
+                  src="./img/Voice/３.webp"
+                  alt="リュックを背負う女性"
+                  loading="lazy"
+                  width="1136"
+                  height="1136"
+                />
+              </div>
+              <div class="p-voice-card__bg p-voice-card__bg--begie"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                    /voice
+===============================================  -->
+      <!-- ===============================================
+                        #detail
+    ===============================================  -->
+      <section class="p-detail-bg" id="detail">
+        <div class="p-detail p-detail__inner">
+          <div class="c-title wow fadeIn" data-wow-duration="2s">
+            <h2 class="c-title__main">
+              「仕事」と「プライベート」を両立させるためのこだわりがこもったSAORSAは、快適な使い心地であなたを応援します。
+            </h2>
+            <div class="c-title__en">Detail</div>
+          </div>
+          <div class="p-detail__contents">
+            <!-- Slider main container -->
+            <div class="swiper p-swiper__main" id="js-main-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper p-swiper__main-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide p-swiper__main-slide">
+                  <img
+                    src="./img/slider/1.webp"
+                    alt="リュックの大容量の内部"
+                    width="611"
+                    height="610"
+                  />
+                </div>
+                <div class="swiper-slide p-swiper__main-slide">
+                  <img
+                    src="./img/slider/2.webp"
+                    alt="リュックの中のポケット"
+                    width="613"
+                    height="612"
+                  />
+                </div>
+                <div class="swiper-slide p-swiper__main-slide">
+                  <img
+                    src="./img/slider/3.webp"
+                    alt="リュックのフロントポケット"
+                    width="612"
+                    height="612"
+                  />
+                </div>
+                <div class="swiper-slide p-swiper__main-slide">
+                  <img
+                    src="./img/slider/4.webp"
+                    alt="リュックのサイドポケット"
+                    width="613"
+                    height="612"
+                  />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <img
+                  src="./img/slider/slide-arrow.webp"
+                  alt="前へ"
+                  width="72"
+                  height="72"
+                />
+              </div>
+              <div class="swiper-button-next">
+                <img
+                  src="./img/slider/slide-arrow.webp"
+                  alt="次へ"
+                  width="72"
+                  height="72"
+                />
+              </div>
+            </div>
+
+            <div class="p-swiper__sub" id="js-sub-swiper">
+              <div class="p-swiper__sub-wrapper">
+                <div class="p-swiper__sub-slide">
+                  <img
+                    data-index="0"
+                    class="active"
+                    src="./img/slider/1.webp"
+                    alt="リュックの大容量の内部"
+                    width="611"
+                    height="610"
+                  />
+                  <img
+                    data-index="1"
+                    src="./img/slider/2.webp"
+                    alt="リュックの中のポケット"
+                    width="613"
+                    height="612"
+                  />
+                  <img
+                    data-index="2"
+                    src="./img/slider/3.webp"
+                    alt="リュックのフロントポケット"
+                    width="612"
+                    height="612"
+                  />
+                  <img
+                    data-index="3"
+                    src="./img/slider/4.webp"
+                    alt="リュックのサイドポケット"
+                    width="613"
+                    height="612"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-detail__main">
+            <picture class="p-detail__text-img">
+              <source
+                media="(min-width: 768px) "
+                srcset="./img/slider/CTA-pc.webp"
+              />
+              <img
+                src="./img/slider/CTA.webp"
+                alt="リュックの価格"
+                width="686"
+                height="232"
+              />
+            </picture>
+            <div class="p-detail__btn">
+              <a href="#" class="c-button js-cta">
+                <p class="c-button__text">購入はこちら</p>
+                <div class="c-button__arrow">
+                  <img
+                    src="./img/icon/arrow.webp"
+                    alt="ボタンの矢印"
+                    loading="lazy"
+                    width="11"
+                    height="18"
+                  />
+                </div>
+              </a>
+            </div>
+            <table class="p-detail__table">
+              <caption class="sr-only">
+                商品の詳細情報
+              </caption>
+
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">素材</th>
+                <td class="p-detail__dd">レザー</td>
+              </tr>
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">重さ</th>
+                <td class="p-detail__dd">約0.9kg</td>
+              </tr>
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">外ポケット</th>
+                <td class="p-detail__dd">
+                  サイドオープンポケット×２、フロント
+                  ファスナー、ポケット×２（中にオープンポケット×１）
+                </td>
+              </tr>
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">内ポケット</th>
+                <td class="p-detail__dd">
+                  PCポケット×１、オープンポケット×３、
+                  ファスナーポケット×１、サイド収納×２
+                </td>
+              </tr>
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">サイズ</th>
+                <td class="p-detail__dd">
+                  横幅 約31cm×高さ 約38cm×マチ幅 約11cm
+                </td>
+              </tr>
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">容量</th>
+                <td class="p-detail__dd">13L</td>
+              </tr>
+              <tr class="p-detail__item">
+                <th class="p-detail__dt">カラー</th>
+                <td class="p-detail__dd-flex">
+                  <p class="p-detail__dd-text">全4色</p>
+                  <div class="p-detail__dd-color-list">
+                    <span
+                      class="p-detail__dd-color-box"
+                      style="background: #3c3f4a"
+                    ></span>
+                    <span
+                      class="p-detail__dd-color-box"
+                      style="background: #99a1bb"
+                    ></span>
+                    <span
+                      class="p-detail__dd-color-box"
+                      style="background: #dbc7cb"
+                    ></span>
+                    <span
+                      class="p-detail__dd-color-box"
+                      style="background: #c3b5b4"
+                    ></span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================================
+                        /detail
+    ===============================================  -->
+    </main>
+
+    <footer class="p-footer-bg">
+      <div class="p-footer">
+        <div class="p-footer__top">
+          <a class="p-footer__logo" href="#"
+            ><img
+              src="./img/icon/ロゴ.webp"
+              alt="SAORSAロゴ"
+              loading="lazy"
+              width="575"
+              height="98"
+          /></a>
+          <div class="p-footer__sns">
+            <a href="https://www.instagram.com/" class="p-footer__instagram"
+              ><img
+                src="./img/icon/instagram.webp"
+                alt="instagramロゴ"
+                loading="lazy"
+                width="88"
+                height="87"
+            /></a>
+            <a href="https://www.youtube.com/" class="p-footer__X"
+              ><img
+                src="./img/icon/X.webp"
+                alt="Xロゴ"
+                loading="lazy"
+                width="91"
+                height="94"
+            /></a>
+            <a href="https://www.X.com/" class="p-footer__youtube"
+              ><img
+                src="./img/icon/youtube.webp"
+                alt="youtubeロゴ"
+                loading="lazy"
+                width="96"
+                height="83"
+            /></a>
+          </div>
+          <div class="p-footer__link">
+            <a href="#" class="p-footer__privacy">プライバシーポリシー</a>
+            <a href="#" class="p-footer__terms">利用規約</a>
+            <a href="#" class="p-footer__contact">お問い合わせ</a>
+          </div>
+        </div>
+        <div class="p-footer__copy">
+          <p class="p-footer__copy-text">
+            &copy;2025 SEORSA All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- wow -->
+    <script src="./wow/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- scriptの読み込みのための記述です -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
