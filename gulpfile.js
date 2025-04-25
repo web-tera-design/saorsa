@@ -22,6 +22,7 @@ import replace from "gulp-replace";
 import { deleteAsync } from "del";
 import watch from "gulp-watch";
 import gulpIf from "gulp-if";
+import postcssUrl from "postcss-url";
 
 const sass = gulpSass(dartSass);
 const browserSyncInstance = browserSync.create();
@@ -29,7 +30,7 @@ const browserSyncInstance = browserSync.create();
 //* ===============================================
 //#Sassフォルダ構成に合わせて変更
 //=============================================== *//
-const scssDirs = ["layout", "component", "project", "utility"];
+const scssDirs = ["layout", "component", "project", "utility", "foundation", "global"];
 const baseDir = "./src/assets/sass/";
 
 //* ===============================================
@@ -78,13 +79,22 @@ function compileSass() {
       })
     )
     .pipe(sass())
+    .pipe(
+      postcss([
+        postcssUrl({
+          url: (asset) => {
+            return asset.url.replace(/\.\.\/\.\.\/img/g, "../img");
+          },
+        }),
+      ])
+    )
     .pipe(postcss([autoprefixer(), cssSorter(), mergeRules()]))
     .pipe(cleanCSS())
     .pipe(gulp.dest("./css/"))
     .pipe(browserSyncInstance.stream()) // ブラウザをストリームで更新
     .pipe(
       notify({
-        message: "Sassをコンパイルして圧縮しました！",
+        message: "Sassをコンパイルして圧縮しました!",
       })
     );
 }
@@ -108,7 +118,7 @@ function formatJS() {
     .pipe(browserSyncInstance.stream())
     .pipe(
       notify({
-        message: "スクリプトをコンパイルして圧縮しました！",
+        message: "スクリプトをコンパイルして圧縮しました!",
       })
     );
 }
