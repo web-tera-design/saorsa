@@ -1,0 +1,23 @@
+name: 🚀 Deploy to Xserver via FTP
+
+on:
+  push:
+    branches:
+      - master  # mainブランチにpushされたら発動
+
+jobs:
+  ftp-deploy:
+    name: 📡 FTP Upload
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 GitHubリポジトリのコードを取得
+        uses: actions/checkout@v3
+
+      - name: 📤 XserverにFTPアップロード
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.3
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /web-tera-design.com/public_html/tera_corporate/
